@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+    
+
+{% block body %}
+    
+    
+    <!-- Navbar -->
+    <!-- Seção Início -->
+    <section id="inicio" class="bg-primary text-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Olá, eu sou Paulo Ricardo</h1>
+                    <p class="lead">Sou desenvolvedor full-stack com foco em Python/Flask no backend e HTML/CSS/Bootstrap no frontend.</p>
+                    <a href="#projetos" class="btn btn-light btn-lg">Ver Projetos</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="{{ url_for('static', filename='img/eu.jpeg') }}" 
+                         class="img-fluid rounded-circle w-75" 
+                         alt="Foto de Perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção Projetos -->
+     <!-- Projetos -->
+    <section id="projetos" class="py-5">  
+        <div class="container">  
+            <h2 class="text-center mb-5">Meus Projetos</h2>  
+            <div class="row g-4">  
+                <!-- Projeto 1 -->  
+                <div class="col-md-6 col-lg-4">  
+                    <div class="card h-100">  
+                        <img src="https://www.projetowebsite.com.br/template/images/criacao/criacao-de-site-padrao.jpg" class="card-img-top" alt="Projeto 1">  
+                        <div class="card-body">  
+                            <h5 class="card-title">Sistema de Gestão</h5>  
+                            <p class="card-text">Desenvolvido com React e Node.js para otimizar processos empresariais.</p>  
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>  
+                        </div>  
+                    </div>  
+                </div>  
+                <!-- Projeto 2 -->  
+                <div class="col-md-6 col-lg-4">  
+                    <div class="card h-100">  
+                        <img src="https://www.projetowebsite.com.br/template/images/criacao/criacao-de-site-padrao.jpg" class="card-img-top" alt="Projeto 1">  
+                        <div class="card-body">  
+                            <h5 class="card-title">Sistema de Gestão</h5>  
+                            <p class="card-text">Desenvolvido com React e Node.js para otimizar processos empresariais.</p>  
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>  
+                        </div>  
+                    </div>  
+                </div> 
+                <!-- Projeto 3 --> 
+                <div class="col-md-6 col-lg-4">  
+                    <div class="card h-100">  
+                        <img src="https://www.projetowebsite.com.br/template/images/criacao/criacao-de-site-padrao.jpg" class="card-img-top" alt="Projeto 1">  
+                        <div class="card-body">  
+                            <h5 class="card-title">Sistema de Gestão</h5>  
+                            <p class="card-text">Desenvolvido com React e Node.js para otimizar processos empresariais.</p>  
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>  
+                        </div>  
+                    </div>  
+                </div>  
+
+                <div class="col-md-6 col-lg-4">  
+                    <div class="card h-100">  
+                        <img src="https://www.projetowebsite.com.br/template/images/criacao/criacao-de-site-padrao.jpg" class="card-img-top" alt="Projeto 1">  
+                        <div class="card-body">  
+                            <h5 class="card-title">Sistema de Gestão</h5>  
+                            <p class="card-text">Desenvolvido com React e Node.js para otimizar processos empresariais.</p>  
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>  
+                        </div>  
+                    </div>  
+                </div>
+            </div>  
+        </div>  
+    </section>  
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="bg-light py-5">  
+        <div class="container">  
+            <h2 class="text-center mb-5">Habilidades Técnicas</h2>  
+            <div class="row">  
+                <!-- Habilidade HTML -->  
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fab fa-html5 fa-3x text-danger mb-3"></i>  
+                        <h3>HTML5</h3> 
+                    </div>  
+                </div>  
+                <!-- Habilidade CSS -->   
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fab fa-css3 fa-3x text-primary mb-3"></i>  
+                        <h3>CSS 3</h3> 
+                    </div>  
+                </div> 
+                <!-- Habilidade JavaScript -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fab fa-bootstrap fa-3x text-dark mb-3"></i>  
+                        <h3>Bootstrap</h3>  
+                    </div>
+                </div>  
+                <!-- Habilidade Bootstrap -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fab fa-python fa-3x text-warning mb-3"></i>  
+                        <h3>Python</h3>  
+                    </div>
+                </div>
+                <!-- Habilidade Flask -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <img src="{{ url_for('static', filename='img/flask.png') }}" 
+                             alt="Flask Logo"
+                             class="mb-3"
+                             style="width: 6rem; height: auto;">
+                        <h3>Flask</h3>  
+                    </div>
+                </div>
+                <!-- Habilidade Java -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fab fa-java fa-3x text-danger mb-3"></i>
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <!-- Habilidade C -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 3.5rem; height: 3.5rem; font-size: 1.5rem;">
+                            <strong>C</strong>
+                        </div>
+                        <h3>C</h3>
+                    </div>
+                </div>
+                <!-- Habilidade MySQL -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fas fa-database fa-3x text-info mb-3"></i>
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+                <!-- Habilidade PostgreSQL -->
+                <div class="col-md-4 mb-4">  
+                    <div class="text-center">  
+                        <i class="fas fa-database fa-3x text-info mb-3"></i>
+                        <h3>PostgreSQL</h3>
+                </div>
+                
+            </div>  
+    </section>  
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="py-5">  
+        <div class="container">  
+            <div class="row align-items-center">  
+                <div class="col-lg-6">  
+                    <img src="{{ url_for('static', filename='img/eu.jpeg') }}" class="img-fluid rounded w-65" alt="Sobre Mim">  
+                </div>  
+                <div class="col-lg-6">  
+                    <h2>Sobre Mim</h2>  
+                    <p>Olá! Meu nome é Paulo Ricardo Pereira Gomes, e minha jornada na tecnologia começou em 2019, quando decidi mudar de rota acadêmica. Na época, cursava Licenciatura em Matemática, mas percebi que meu verdadeiro interesse estava no universo da tecnologia. Foi então que ingressei no Bacharelado em Sistemas de Informação no Instituto Federal do Espírito Santo – campus Serra, onde venho consolidando minha formação como desenvolvedor e profissional de TI.
+
+                        Desde então, tenho explorado diferentes áreas da programação, sempre buscando aprender, evoluir e aplicar esse conhecimento na prática. Meu foco está no desenvolvimento em Python, utilizando o framework Flask, e cada projeto que desenvolvo é uma oportunidade de transformar ideias em soluções reais e funcionais.
+                        
+                        Este portfólio é um reflexo da minha caminhada até aqui. Sinta-se à vontade para explorar meus trabalhos e, se quiser trocar uma ideia, será um prazer conversar!</p>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+    <!-- Seção Contato -->
+    <section id="contato" class="bg-dark text-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <!-- Formulário -->
+                <div class="col-lg-6 mb-4">
+                    <form method="POST" action="">
+                        {{ form_contato.csrf_token }}
+                        <fieldset>
+                            <div class="mb-3">
+                                {{ form_contato.username.label(class= "form-control-label") }}
+                                {{ form_contato.username(class= "form-control") }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form_contato.email.label(class= "form-control-label") }}
+                                {{ form_contato.email(class= "form-control") }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form_contato.corpo.label(class= "form-control-label") }}
+                                {{ form_contato.corpo(class= "form-control") }}
+                            </div>
+                        </fieldset>
+                        {{ form_contato.botao_submit(class="btn btn-primary border mt-2") }}
+                    </form>
+                </div>
+    
+                <!-- Bloco do WhatsApp -->
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="text-center border rounded p-4 bg-success bg-opacity-10 shadow-sm" style="max-width: 350px;">
+                        <h4 class="mb-3">Fale pelo WhatsApp</h4>
+                        <p class="mb-3">Prefere conversar direto? Clique abaixo e fale conosco no WhatsApp:</p>
+                        <a href="https://wa.me/5527981091795" class="btn btn-success d-inline-flex align-items-center gap-2" target="_blank">
+                            <i class="fab fa-whatsapp fa-lg"></i> Iniciar Conversa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Sobre este portfólio</h5>
+                    <p class="text-secondary">Desenvolvido com Bootstrap 5 e Flask.</p>
+                    <p class="text-secondary">&copy; 2025 Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <!-- Links de navegação -->
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Início</a></li>
+                        <li><a href="#projetos" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Projetos</a></li>
+                        <li><a href="#contato" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <!-- Ícones sociais -->
+                    <div class="d-flex gap-3">
+                        <a href="https://github.com/pauloricardopg" class="text-light" target="_blank"><i class="fab fa-github fa-2x" id="icone-footer"></i></a>
+                        <a href="https://linkedin.com/in/pauloricardopg" class="text-light" target="_blank"><i class="fab fa-linkedin fa-2x" id="icone-footer"></i></a>
+                    </div>
+                    <hr>
+                    <p class="mb-0">pauloricado1705@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    
+{% endblock body %}

@@ -1,0 +1,72 @@
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --bs-primary: #2c3e50; /* Cor personalizada */
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out; /* Efeito suave */
+}
+
+.btn-primary {
+    border-radius: 30px;
+    padding: 12px 30px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de levitação */
+}
+
+footer {
+    border-top: 2px solid var(--bs-primary);
+}
+
+footer a:hover {
+    color: var(--bs-primary) !important;
+    transition: 0.3s;
+}
