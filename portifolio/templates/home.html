@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+
+{% block title %}Portfólio - Paulo Ricardo{% endblock title %}
+
+{% block body %}
+
+<section id="inicio" class="bg-primary text-light py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4">Olá, eu sou Paulo Ricardo</h1>
+                <p class="lead">Sou desenvolvedor full-stack com foco em Python/Flask no backend e tecnologias web modernas no frontend.</p>
+                <a href="#projetos" class="btn btn-light btn-lg">Ver Projetos</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="{{ url_for('static', filename='img/eu.jpeg') }}" class="img-fluid rounded-circle w-75 shadow-lg" alt="Foto de perfil de Paulo Ricardo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projetos" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Meus Projetos</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='img/RedeSocial.JPG') }}" class="card-img-top" alt="Screenshot do projeto Rede Social">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Rede Social</h5>
+                        <p class="card-text">Desenvolvido com Flask/Python, HTML5, CSS e Bootstrap.</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pauloricardopg/RedeSocial" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x icone-link-projeto"></i></a>
+                            <a href="https://redesocial-production.up.railway.app" class="text-dark" target="_blank"><i class="fas fa-globe fa-2x icone-link-projeto"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='img/Restaurante.JPG') }}" class="card-img-top" alt="Screenshot do projeto Restaurante">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Restaurante</h5>
+                        <p class="card-text">Desenvolvido com Flask/Python, HTML5, CSS e Bootstrap.</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pauloricardopg/Restaurante" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x icone-link-projeto"></i></a>
+                            <a href="https://restaurante-production-d756.up.railway.app" class="text-dark" target="_blank"><i class="fas fa-globe fa-2x icone-link-projeto"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='img/PDFs.JPG') }}" class="card-img-top" alt="Screenshot do projeto PDF Manipulation">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">PDF Manipulation</h5>
+                        <p class="card-text">Desenvolvido com Flask/Python, HTML5, CSS e Bootstrap.</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pauloricardopg/Manipulador-de-PDF" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x icone-link-projeto"></i></a>
+                            <a href="https://web-production-a850.up.railway.app" class="text-dark" target="_blank"><i class="fas fa-globe fa-2x icone-link-projeto"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='img/translator.JPG') }}" class="card-img-top" alt="Screenshot do projeto Translator">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Translator</h5>
+                        <p class="card-text">Desenvolvido com Flask/Python, HTML5, CSS e Bootstrap.</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pauloricardopg/Translator" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x icone-link-projeto"></i></a>
+                            <a href="https://web-production-5dfe.up.railway.app" class="text-dark" target="_blank"><i class="fas fa-globe fa-2x icone-link-projeto"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='img/YT.JPG') }}" class="card-img-top" alt="Screenshot do projeto YouTube Downloader">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">YouTube Downloader</h5>
+                        <p class="card-text">Desenvolvido com Flask/Python, HTML5, CSS e Bootstrap.</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pauloricardopg/YouTube-Downloader" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x icone-link-projeto"></i></a>
+                            <a href="https://web-production-5cf7.up.railway.app/" class="text-dark" target="_blank"><i class="fas fa-globe fa-2x icone-link-projeto"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='img/TO-LIST.JPG') }}" class="card-img-top" alt="Screenshot do projeto To-Do List FullStack">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">ToDoList</h5>
+                        <p class="card-text">Desenvolvido com Flask/Python, React.js e Tailwind CSS.</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/pauloricardopg/To-List-FullStack" class="text-dark me-3" target="_blank"><i class="fab fa-github fa-2x icone-link-projeto"></i></a>
+                            <a href="https://frontend-production-1b77.up.railway.app/" class="text-dark" target="_blank"><i class="fas fa-globe fa-2x icone-link-projeto"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="habilidades" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-html5 fa-3x text-danger mb-3"></i>
+                    <h3>HTML5</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-css3 fa-3x text-primary mb-3"></i>
+                    <h3>CSS 3</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-bootstrap fa-3x text-purple mb-3"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-python fa-3x text-warning mb-3"></i>
+                    <h3>Python</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <img src="{{ url_for('static', filename='img/flask.png') }}" alt="Flask Logo" class="mb-3" style="width: 48px; height: auto;">
+                    <h3>Flask</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-java fa-3x text-danger mb-3"></i>
+                    <h3>Java</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 48px; height: 48px; font-size: 1.5rem;">
+                        <strong>C</strong>
+                    </div>
+                    <h3>C</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-js fa-3x text-warning mb-3"></i>
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-database fa-3x text-info mb-3"></i>
+                    <h3>MySQL</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                    <h3>PostgreSQL</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fab fa-react fa-3x text-info mb-3"></i>
+                    <h3>React.js</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="{{ url_for('static', filename='img/eu.jpeg') }}" class="img-fluid rounded shadow w-75" alt="Foto de Paulo Ricardo em um ambiente de trabalho">
+            </div>
+            <div class="col-lg-6">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Paulo Ricardo Pereira Gomes, e minha jornada na tecnologia começou em 2019, quando decidi mudar de rota acadêmica. Na época, cursava Licenciatura em Matemática, mas percebi que meu verdadeiro interesse estava no universo da tecnologia. Foi então que ingressei no Bacharelado em Sistemas de Informação no Instituto Federal do Espírito Santo – campus Serra, onde venho consolidando minha formação como desenvolvedor e profissional de TI.</p>
+                <p>Desde então, tenho explorado diferentes áreas da programação, sempre buscando aprender, evoluir e aplicar esse conhecimento na prática. Meu foco está no desenvolvimento em Python, utilizando o framework Flask, e cada projeto que desenvolvo é uma oportunidade de transformar ideias em soluções reais e funcionais.</p>
+                <p>Este portfólio é um reflexo da minha caminhada até aqui. Sinta-se à vontade para explorar meus trabalhos e, se quiser trocar uma ideia, será um prazer conversar!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="bg-dark text-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4">
+                <form method="POST" action="">
+                    {{ form_contato.hidden_tag() }} <fieldset>
+                        <div class="mb-3">
+                            {{ form_contato.username.label(class="form-label") }}
+                            {{ form_contato.username(class="form-control", placeholder="Seu nome completo") }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form_contato.email.label(class="form-label") }}
+                            {{ form_contato.email(class="form-control", placeholder="seuemail@exemplo.com") }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form_contato.corpo.label(class="form-label") }}
+                            {{ form_contato.corpo(class="form-control", rows="5", placeholder="Digite sua mensagem aqui...") }}
+                        </div>
+                    </fieldset>
+                    {{ form_contato.botao_submit(class="btn btn-primary w-100") }}
+                </form>
+            </div>
+
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="text-center border rounded p-4 bg-dark shadow-sm" style="max-width: 350px;">
+                    <h4 class="mb-3">Fale pelo WhatsApp</h4>
+                    <p class="mb-3 text-white-50">Prefere conversar direto? Clique abaixo para iniciar uma conversa no WhatsApp:</p>
+                    <a href="https://wa.me/5527981091795" class="btn btn-success d-inline-flex align-items-center gap-2" target="_blank">
+                        <i class="fab fa-whatsapp fa-lg"></i> Iniciar Conversa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-light py-4 border-top border-secondary">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4">
+                <h5>Sobre este portfólio</h5>
+                <p class="text-white-50">Desenvolvido com Bootstrap 5 e Flask.</p>
+                <p class="text-white-50">&copy; 2025 Paulo Ricardo Pereira Gomes. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#inicio" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Início</a></li>
+                    <li><a href="#projetos" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Projetos</a></li>
+                    <li><a href="#contato" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <h5>Redes Sociais</h5>
+                <div class="d-flex gap-3 justify-content-md-end">
+                    <a href="https://github.com/pauloricardopg" class="text-light" target="_blank"><i class="fab fa-github fa-2x icone-social"></i></a>
+                    <a href="https://linkedin.com/in/pauloricardopg" class="text-light" target="_blank"><i class="fab fa-linkedin fa-2x icone-social"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock body %}
